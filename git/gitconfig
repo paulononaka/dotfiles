@@ -1,0 +1,10 @@
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  dic = diff --cached
+  r = pull --rebase
+  l = log --graph --pretty=oneline --abbrev-commit --branches=*
+  lg = log --graph --branches=* --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[color]
+  ui = auto
