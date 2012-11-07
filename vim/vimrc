@@ -6,6 +6,10 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+" Bundle 'tpope/vim-afterimage'
+" Bundle 'rstacruz/sparkup'
+" Bundle 'rodjek/vim-puppet'
+" Bundle 'kchmck/vim-coffee-script'
 Bundle 'git://github.com/wincent/Command-T.git'
 Bundle 'git://github.com/groenewege/vim-less.git'
 Bundle 'tpope/vim-fugitive'
@@ -15,11 +19,9 @@ Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-afterimage'
 Bundle 'tpope/vim-surrond'
 Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-commentary'
-Bundle 'rstacruz/sparkup'
 Bundle 'bbommarito/vim-slim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tsaleh/vim-align'
@@ -28,8 +30,6 @@ Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'ervandew/supertab'
-Bundle 'rodjek/vim-puppet'
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'git://github.com/scrooloose/nerdtree.git'
 Bundle 'git://github.com/Lokaltog/vim-powerline.git'
 
@@ -75,7 +75,8 @@ set nowrap
 set novisualbell
 set backspace=indent,eol,start
 set autowriteall
-set completeopt=menu,preview
+set completeopt=longest,menuone,preview
+" set completeopt=menu,preview
 set autoread
 set autowrite
 set backupdir=$TMPDIR
