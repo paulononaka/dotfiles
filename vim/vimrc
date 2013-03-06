@@ -10,19 +10,19 @@ Bundle 'gmarik/vundle'
 " Bundle 'rstacruz/sparkup'
 " Bundle 'rodjek/vim-puppet'
 " Bundle 'kchmck/vim-coffee-script'
+" Bundle 'bbommarito/vim-slim'
+" Bundle 'tpope/vim-haml'
 Bundle 'git://github.com/wincent/Command-T.git'
 Bundle 'git://github.com/groenewege/vim-less.git'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-surrond'
+Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-commentary'
-Bundle 'bbommarito/vim-slim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tsaleh/vim-align'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -32,6 +32,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'ervandew/supertab'
 Bundle 'git://github.com/scrooloose/nerdtree.git'
 Bundle 'git://github.com/Lokaltog/vim-powerline.git'
+Bundle 'jpo/vim-railscasts-theme'
 
 filetype plugin indent on
 
@@ -50,7 +51,8 @@ nnoremap <silent> <D-T> :CommandTBuffer<CR>
 
 syntax enable
 set background=dark
-colorscheme solarized
+' colorscheme solarized
+colorscheme railscastsedu
 
 set hidden
 set tabstop=2
@@ -79,14 +81,14 @@ set completeopt=longest,menuone,preview
 " set completeopt=menu,preview
 set autoread
 set autowrite
-set backupdir=$TMPDIR
+set backupdir=/tmp
 set showfulltag
 set smarttab
 set shiftround
 set guioptions-=T
 " set relativenumber
 set undofile
-set undodir=$TMPDIR
+set undodir=/tmp
 set gdefault
 set incsearch
 set showmatch
