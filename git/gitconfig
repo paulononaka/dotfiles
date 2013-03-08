@@ -10,3 +10,6 @@
   lg = log --graph --branches=* --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [color]
   ui = auto
+[user]
+	name = Paulo Henrique Nonaka
+	email = paulononaka@gmail.com
