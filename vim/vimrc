@@ -36,16 +36,19 @@ Bundle 'jpo/vim-railscasts-theme'
 
 filetype plugin indent on
 
+map <C-t> :CommandT<CR>
+map <S-t> :CommandTBuffer<CR>
+
 if has("gui_running")
-  map <C-t> :CommandT<CR>
-  map <S-t> :CommandTBuffer<CR>
   set background=dark
   set guifont=Inconsolata\ 12
 endif
 
 if has("gui_macvim")
-  macmenu &File.New\ Tab key=<nop>
-  macmenu &File.Open\ Tab\.\.\. key=<nop>
+  "macmenu &File.New\ Tab key=<nop>
+  "macmenu &File.Open\ Tab\.\.\. key=<nop>
+  "map <D-t> :CommandT<CR>
+  "map <D-T> :CommandTBuffer<CR>
   set guifont=Menlo:h16
 endif
 
