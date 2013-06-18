@@ -128,4 +128,4 @@ au FocusLost * :wa
 au FocusLost * :CommandTFlush
 au BufWrite * :call DeleteTrailingWS()
 
-iab xpry require 'pry'; binding.pry
+iab xpry require 'pry'; binding.pry;
