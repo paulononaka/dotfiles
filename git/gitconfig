@@ -15,3 +15,5 @@
   helper = cache
 [core]
   editor = /usr/bin/vim
+	excludesfile = *.swo
+	excludesfile = *.swp

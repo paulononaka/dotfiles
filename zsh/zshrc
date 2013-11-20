@@ -29,18 +29,11 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump rails3 git ruby brew bundler rvm)
+# plugins=(autojump rails3 git ruby brew bundler rvm)
+plugins=(autojump git osx)
 
 source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
 
-# Customize to your needs...
-export PATH=/Users/Thoughtworks/.rvm/gems/ruby-1.9.3-p194@iba2/bin:/Users/Thoughtworks/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/Thoughtworks/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/Thoughtworks/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-
-safe_spinach() {
-  for feature in features/specifications/**/*.feature; do
-    spinach $feature || {
-      say -v Agnes "Houston, we have a problem"
-      terminal-notifier -message "The feature file:\n$feature\n\nFailed." -title "Spinach Failed"
-    }
-  done
-}
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
