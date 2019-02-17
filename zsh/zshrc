@@ -34,17 +34,24 @@ plugins=(autojump git osx)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
+ulimit -c unlimited
 
-### Added by the Heroku Toolbelt
+# android
 export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
-export ANDROID_SDK="/Users/paulononaka/adt-bundle-mac-x86_64-20131030/sdk/"
-export ANDROID_NDK="/Users/paulononaka/android-ndk-r9c"
-export PATH="/usr/local/heroku/bin:$PATH"
+export ANDROID_SDK="$HOME/Library/Android/sdk"
+export ANDROID_HOME=$ANDROID_SDK
 export PATH="$PATH:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$ANDROID_NDK"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export CASSANDRA_HOME="/Users/paulononaka/codes/ufmg/apache-cassandra-2.1.1"
-export TITAN_HOME="/Users/paulononaka/codes/ufmg/titan-0.5.1-hadoop2"
-export JAVA_OPTIONS="-javaagent:$TITAN_HOME/lib/jamm-0.2.5.jar"
-export JAVA_OPTS=$JAVA_OPTIONS
 
-ulimit -c unlimited
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
