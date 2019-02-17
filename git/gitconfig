@@ -15,9 +15,9 @@
   helper = cache
 [core]
   editor = /usr/bin/vim
-	excludesfile = *.swo
-	excludesfile = *.swp
+  excludesfile = *.swo
+  excludesfile = *.swp
 [push]
-	default = matching
+  default = matching
 [grep]
   linenumber = true
